@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/input.css">
+  <title>Login Form</title>
+</head>
+<body class="bg-gray-200">
+  <header>
+    <h1 class="text-center text-2xl mt-4">Log In</h1>
+  </header>
+  <main>
+    <form action="./login" method="POST" class=" ml-auto mr-auto bg-white my-12 rounded-xl p-6 max-w-xl shadow-lg">
+      <fieldset>
+        <div class="flex justify-between mb-4">
+          <label class="my-auto">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Email Address..." required class="border-2 border-cyan-600 rounded p-2 w-3/4">
+        </div>
+        <div class="flex justify-between mb-8">
+          <label class="my-auto">Password</label>
+          <input type="password" name="password" id="password" placeholder="Password..." required class="border-2 border-cyan-600 rounded p-2 w-3/4">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-blue-400 px-4 py-1 rounded-2xl text-white">Submit</button>
+          <button type="reset" class="bg-blue-400 px-4 py-1 rounded-2xl text-white mx-2">Reset</button>
+        </div>
+      </fieldset>
+    </form>
+    <p class="text-center">Don't have an account? <a href="./registration.html" class="hover:underline">Register</a></p>
+  </main>
+</body>
+</html>
